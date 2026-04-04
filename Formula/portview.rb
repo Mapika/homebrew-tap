@@ -1,26 +1,26 @@
 class Portview < Formula
   desc "A diagnostic-first port viewer. See what's on your ports, then act on it."
   homepage "https://github.com/Mapika/portview"
-  version "1.4.0"
+  version "1.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Mapika/portview/releases/download/v#{version}/portview-darwin-aarch64.tar.gz"
-      sha256 "f79683e34496b0e5a577860f266f14508ace7a6f14e2ec8c232bc4d4700ebfc7"
+      sha256 "4bcb962e191a04b2e91a6f2b7342dec78b00f98a8f478624c4ab0d5faff9d59c"
     else
       url "https://github.com/Mapika/portview/releases/download/v#{version}/portview-darwin-x86_64.tar.gz"
-      sha256 "c787a8a411e51f65a6adb1e6f540806b9f3407683e8a8aa55b5716fa2f1a9096"
+      sha256 "d876a71c261403fa0f93afce2aac36ad998cd913c33ba506b89ee5f477b58cce"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Mapika/portview/releases/download/v#{version}/portview-linux-aarch64-musl.tar.gz"
-      sha256 "50fe065a95c7ba17822027b6e4b22a5cc77dbc0bccfe20a7fae65f7cf6bc4206"
+      sha256 "58fe7a9d70dbff0e94bcf6abb1ef0cbc93781fcdcb101862bddb44e4b1c1389d"
     else
       url "https://github.com/Mapika/portview/releases/download/v#{version}/portview-linux-x86_64-musl.tar.gz"
-      sha256 "5bec88e34140075efb97650d56fc1835700175ced0ccdc6fc64d29c6409760ea"
+      sha256 "e1815e1b147d0e229772139451750313eb285b80163b650ba07b269004b06f2c"
     end
   end
 
